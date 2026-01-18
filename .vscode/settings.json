@@ -1,0 +1,27 @@
+{
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "C_Cpp.autocomplete": "default",
+  "C_Cpp.intelliSenseEngine": "default",
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "emeraldwalk.runonsave": {
+    "autoClearConsole": true,
+    "shell": "/bin/bash",
+    "commands": [
+      {
+        "match": "\\.c$",
+        "isAsync": true,
+        "cmd": "cd ${fileDirname} && gcc ${fileBasename} -o ${fileBasenameNoExtension} && ./${fileBasenameNoExtension}"
+      }
+    ]
+  }
+}
